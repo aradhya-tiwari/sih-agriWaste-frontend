@@ -1,0 +1,46 @@
+---
+// let arr = [];
+// async function getData() {
+// 	let fetchh = await fetch("http://localhost:3000/farm-waste");
+// 	let res = await fetchh.json();
+// 	arr = await res;
+// 	return arr;
+// }
+// await getData();
+// console.log(arr[6].farmWaste.id);
+import Header from "../components/Header.astro";
+import Slide1 from "../components/Slide1.svelte";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Agri-Waste</title>
+	</head>
+	<body>
+		<div class="absolute">
+			<Header />
+		</div>
+		<Slide1 />
+	</body>
+	<!-- <button id="assign" class="p-5 text-lg bg-slate-800 text-white"
+			>Click to Assign
+		</button> -->
+	<!-- <script define:vars={{ arr }}>
+	document
+		.querySelector("#assign")
+		.addEventListener("click", async () => {
+			console.log("Clicked");
+			await fetch("http://localhost:3000/farm-waste/assign", {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify({
+					to: 2,
+					id: 3,
+				}),
+			});
+		});
+	</script> -->
+</html>
